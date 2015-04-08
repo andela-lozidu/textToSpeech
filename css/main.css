@@ -1,0 +1,11 @@
+#selectArea{
+  width: 400px;
+  float: right;
+}
+#textToConvert {
+  width: 700px;
+  height: 300px;
+}
+#navText{
+  color: #638bb5;
+}

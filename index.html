@@ -5,17 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/materialize.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8">
 </head>
 <body>
-  <textarea id="textToConvert" style="width:800px; height:200px"></textarea>
+  <nav>
+    <div class="nav-wrapper" id="navText">
+      <a href="#" class="brand-logo">TEXT TO SPEECH</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">creating audio for your text and short stories</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textToConvert"></textarea>
+          <br>
+          <br>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <form>
+    <input type="button" value="Convert to audio" id="convertButton" class="btn waves-effect waves-light">
+  </form>
   <br>
   <br>
-  <input type="button" value="Convert to audio" id="convertButton"><br>
   <div id='audioSrc'>
-    <audio controls autoplay>
-      <source id="audio_src" src='sound_clip/clip001.mp3'>
+    <audio controls>
+      <source id="audio_src" src='sound_clip/clip001.wav'>
     </audio>
   </div>
   <script type="text/javascript" src="js/jquery.js"></script>
